@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+#navbar {
+    display:  flex;
+    justify-content:  flex-end;
+    flex-flow:  row wrap;
+    position: fixed;
+    background-color: lightgray;
+    width: 100%;
+    margin: 0;
+};
+#navbar img {
+    margin-left: 270px;
+}
+.arrow-down {
+    font-size: 50px;
+    margin-right: 219px;
+}
+#introduction {
+    background-image: url('./images/rsz_trustpatient.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 304px;
+   ; 
+}
+.firstImpression {
+    padding: 90px;
+    height: 468px;
+}
+.firstImpression h2 {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #887e7e
+}
+.firstImpression p {
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #887e7e
+}
+.firstImpression i {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    color:#887e7e
+}
+#firstSection {
+   height: 400px;
+
+}
+#firstSection h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #252222
+
+}
+#firstSection .advantages {
+    background-color: purple;
+    height: 80px;
+    margin-bottom:1em;
+    width: 280px;
+    border-radius: 10px;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5em;
+    display:flex;
+
+
+}
+.applicationDiv {
+
+}
+#firstSection .advantages h3 {
+    color: white;
+}
+#secondSection {
+    height: 400px;
+    margin-top: 109px;
+}
+#secondSection h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #252222
+
+}
+#secondSection p{
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width:280px;
+    margin-left: 2.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    color: #252222
+
+}
+.application h4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.explainingLaserterapy a {
+    margin-left: 5px;
+}
+.explainingLaserterapy img {
+    width: 358px;
+    height: 254px;
+}
+#thirdSection {
+   margin-top: 491px;
+   text-align: center;
+}
+#thirdSection h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #252222
+
+}
+.authorityArgument h4 {
+    font-size: 15px;
+    height: 80px;
+    margin-bottom:1em;
+    width: 280px;
+    border-radius: 10px;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5em;
+    display:flex;
+
+}
+.authorityArgument p {
+    margin-bottom: 1em;
+    margin-right:0.5em;
+    text-align:right;
+    margin-right:1em;
+}
+#getInTouch h3 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+}
+form input {
+    display: block;
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+form textarea {
+    display: block;
+    width: 220px;
+    height: 53px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+
+}
+form button {
+    margin-top: 1em;
+    background-color:purple;
+    color: white;
+    border-style:none;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    align-items: center;
+
+}
+form {
+margin-left:71px;
+}
+.whatsapp {
+    display: flex;
+    text-align:center;
+    justify-content:center;
+    margin-bottom: 1em;
+}
+.whatsapp i {
+    margin-right: 10px;
+    color: green;
+    font-size:25px;
+}
+.whatsapp p {
+    margin-top: 3px;
+}
+form button {
+    margin-bottom:0.5em;
+}
+footer {
+    display:flex;
+    background-color: lightgray;
+    width: 100%;
+
+}
+footer img {
+    margin-left: 0.5em;
+}
+footer .whatsapp {
+    margin-left: 9em;
+    margin-top: 0.5em;
+}

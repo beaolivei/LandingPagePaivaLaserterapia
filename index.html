@@ -8,43 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <nav id="navbar">
-        <i class="fas fa-bars arrow-down"></i>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/70x50"></a>
-        
-    </nav>
+     <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">Logo</a>
+        <a href="#aboutus">Quem Somos</a>
+        <a href="#getintouch">Contato</a>
+        <a href="#news">Laserterapia na Mídia</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+     </nav>   
     <section id="introduction">
         <div class="firstImpression">
             <h2>A Headline that calls to action</h2>
             <p>A subtitle that explains better and make people curious to check out more</p>
-            <i class="fas fa-angle-down"></i>
+            <a href="javascript:void(0);" onclick="scrollByRate(700,20)"><i id="arrowDown" class="fa fa-angle-down"></i></a>
+            
         </div>
     </section>
     <section id="firstSection">
         <h2> Você já conhece as vantagens que a Laserterapia pode trazer para seu tratamento?</h2>
-        <div class="advantages">
-            <h3>Aqui vai a primeira vantagem</h3>
-        </div>
-        <div class="advantages">
-            <h3>Aqui vai a segunda vantagem</h3>
-        </div>
-        <div class="advantages">
-            <h3>Aqui vai a terceira vantagem</h3>
+        <div class="advantagesList">
+            <div class="advantages">
+                <h3>Aqui vai a primeira vantagem</h3>
+            </div>
+            <div class="advantages">
+                <h3>Aqui vai a segunda vantagem</h3>
+            </div>
+            <div class="advantages">
+                <h3>Aqui vai a terceira vantagem</h3>
+            </div>
         </div>
     </section>
-    <section id="secondSection">
+    <section class='bgParallax'id="secondSection">
         <h2>O que é Laserterapia?</h2>
-        <div class="explainingLaserterapy">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente tempore iste, eaque cum error eligendi
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente tempore iste, eaque cum error eligendi
                 quod tempora provident dolorum? Molestiae suscipit libero eius officiis explicabo corrupti ipsa, unde quidem.</p>
-             <img src="./images/girlLaser.jpg">
-        </div>
-      <div class='applicationDiv'>
+       <div class='applicationDiv'>
       <h2>Quais são as aplicações?</h3>
        <div class="listingApplications">
           <div class="application">
@@ -109,5 +114,6 @@
     </footer>
 
 </body>
+<script src="./main.js"></script>
 
 </html>

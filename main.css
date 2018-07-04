@@ -2,18 +2,57 @@
     margin: 0;
     font-family: 'Encode Sans Condensed', sans-serif;
 }
-#navbar {
-    display:  flex;
-    justify-content:  flex-end;
-    flex-flow:  row wrap;
-    position: fixed;
-    background-color: lightgray;
-    width: 100%;
-    margin: 0;
-};
-#navbar img {
-    margin-left: 270px;
-}
+.topnav {
+    overflow: hidden;
+    background-color: #5593cc;
+    /* position:  fixed; */
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #2d4f6d;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 .arrow-down {
     font-size: 50px;
     margin-right: 219px;
@@ -21,38 +60,84 @@
 #introduction {
     background-image: url('./images/rsz_trustpatient.jpg');
     background-repeat: no-repeat;
-    background-position-y: 304px;
-   ; 
+    background-position-y: 280px;
 }
-.firstImpression {
+    
+@media (min-width: 495px) {
+ #introduction {
+    background-image: url('./images/doc_patientBigSize.png');
+    background-position:  center;
+ }
+}
+
+#introduction .firstImpression {
     padding: 90px;
     height: 468px;
 }
 .firstImpression h2 {
-    margin-bottom: 2em;
-    margin-top: 2em;
+    margin-bottom: 0.5em;
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #887e7e
+    color: #83a5a6;
+    text-shadow: 0 0 10px rgba(199, 214, 224, 0.7);
+}
+@media (min-width: 495px){
+    .firstImpression h2 {
+        font-size: 4em;
+        margin-bottom:  1em;
+    }
 }
 .firstImpression p {
-    margin-bottom: 4em;
+    margin-bottom: 4em; 
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #887e7e
+    color: #728e8f;
 }
+@media (min-width: 495px) {
+    .firstImpression p {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+}
+
 .firstImpression i {
     font-size: 60px;
     display: flex;
     justify-content: center;
     color:#887e7e
 }
+.firstImpression a{
+    text-decoration: none;
+}
 #firstSection {
    height: 400px;
+   padding: 95px 28px;
 
 }
+@media (min-width:340px) {
+    #firstSection {
+        padding: 95px 38px;
+    }
+}
+@media (min-width:355px) {
+    #firstSection {
+        padding: 95px 43px;
+    }
+}
+@media (min-width:355px) {
+    #firstSection {
+        padding: 95px 63px;
+    }
+}
+@media (min-width: 450px) {
+    #firstSection {
+        padding: 95px 96px;
+    }
+}
+
+
 #firstSection h2{
     font-size: 1.5em;
     margin-bottom: 1em;
@@ -67,24 +152,37 @@
     background-color: purple;
     height: 80px;
     margin-bottom:1em;
-    width: 280px;
+    width: 243px;
     border-radius: 10px;
     padding: 1em;
     justify-content: center;
     align-items: center;
-    margin-left: 1.5em;
+
     display:flex;
 
 
 }
-.applicationDiv {
 
-}
 #firstSection .advantages h3 {
     color: white;
 }
+@media (min-width: 495px) {
+    #firstSection .advantages {
+        margin-left: 1em;
+    }
+}
+@media (min-width: 495px) {
+    .advantagesList {
+        display: flex;
+    }
+}
+@media (min-width: 1107px) {
+    .advantagesList{
+        margin-right: 1em;
+    }
+}
 #secondSection {
-    height: 400px;
+    height: 600px;
     margin-top: 109px;
 }
 #secondSection h2{
@@ -107,7 +205,7 @@
     justify-content: center;
     text-align: center;
     align-items:center;
-    color: #252222
+
 
 }
 .application h4{
@@ -119,12 +217,21 @@
 .explainingLaserterapy a {
     margin-left: 5px;
 }
-.explainingLaserterapy img {
-    width: 358px;
-    height: 254px;
+.bgParallax {
+    background-image: url(./images/oldWomanSmiling.png);
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+    text-shadow: 0 0 10px rgba(235, 225, 225, 0.7);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0;
 }
 #thirdSection {
-   margin-top: 491px;
+    margin-top: 25px;
    text-align: center;
 }
 #thirdSection h3 {
@@ -190,9 +297,10 @@ form button {
     color: white;
     border-style:none;
     height: 30px;
-    width: 50px;
+    width: 180px;
     border-radius: 5px;
     align-items: center;
+    margin-left: 24px;
 
 }
 form {
@@ -219,7 +327,7 @@ footer {
     display:flex;
     background-color: lightgray;
     width: 100%;
-
+    /* position:  fixed; */
 }
 footer img {
     margin-left: 0.5em;
